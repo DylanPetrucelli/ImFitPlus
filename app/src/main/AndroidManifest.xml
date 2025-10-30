@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".DadosActivity"/>
+        <activity android:name=".GastoActivity"/>
+        <activity android:name=".IdealActivity"/>
+        <activity android:name=".ImcActivity"/>
     </application>
 
 </manifest>
