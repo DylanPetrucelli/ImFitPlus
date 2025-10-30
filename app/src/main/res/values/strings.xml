@@ -48,6 +48,7 @@
     <string name="titulo_peso_ideal">Sua Meta de Peso</string>
     <string name="label_peso_ideal">Seu peso ideal é:</string>
     <string name="label_diferenca_peso">Sua diferença para o peso ideal é:</string>
+    <string name="formato_peso_kg">%.1f kg</string>
     <string name="label_recomendacoes">Recomendações</string>
     <string name="label_interesse">Marque as áreas de seu interesse para receber dicas:</string>
     <string name="cb_dicas_alimentacao">Dicas de alimentação</string>
@@ -58,7 +59,7 @@
     <string name="validacao_erro_nome">Por favor, insira seu nome.</string>
     <string name="validacao_erro_idade">Por favor, insira uma idade válida.</string>
     <string name="validacao_erro_sexo">Por favor, selecione seu sexo.</string>
-    <string name="validacao_erro_altura">Por favor, insira uma altura válida (ex: 1.75).</string>
-    <string name="validacao_erro_peso">Por favor, insira um peso válido (ex: 70.5).</string>
+    <string name="validacao_erro_altura">Por favor, insira uma altura válida.</string>
+    <string name="validacao_erro_peso">Por favor, insira um peso válido.</string>
 
 </resources>
