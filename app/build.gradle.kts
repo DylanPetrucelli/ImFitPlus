@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "br.edu.ifsp.scl.ads.prdm.sc3039226.imfitplus"
-    compileSdk = 36
+    compileSdk = 260
 
     defaultConfig {
         applicationId = "br.edu.ifsp.scl.ads.prdm.sc3039226.imfitplus"
