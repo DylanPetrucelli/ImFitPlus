@@ -16,7 +16,7 @@
             android:id="@+id/tv_dados_titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dados Pessoais"
+            android:text="@string/titulo_dados"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Preencha seus dados para que possamos calcular seu IMC."
+            android:text="@string/subtitulo_dados"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Nome Completo:"
+            android:text="@string/label_nome"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_dados_subtitulo" />
@@ -48,7 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:hint="Digite seu nome"
+            android:hint="@string/hint_nome"
             android:inputType="textPersonName|textCapWords"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Idade:"
+            android:text="@string/label_idade"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_nome" />
@@ -70,7 +70,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:hint="Digite sua idade"
+            android:hint="@string/hint_idade"
             android:inputType="number"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Sexo:"
+            android:text="@string/label_sexo"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_idade" />
@@ -100,13 +100,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="Masculino" />
+                android:text="@string/rb_masculino" />
 
             <RadioButton
                 android:id="@+id/rb_feminino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Feminino" />
+                android:text="@string/rb_feminino" />
         </RadioGroup>
 
         <TextView
@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:text="Altura (m):"
+            android:text="@string/label_altura"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@id/tv_label_peso"
             app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:text="Peso (kg):"
+            android:text="@string/label_peso"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_label_altura"
@@ -139,7 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:hint="Ex: 1.75"
+            android:hint="@string/hint_altura"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
             app:layout_constraintEnd_toStartOf="@id/et_peso"
@@ -151,8 +151,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:hint="Ex: 70.5"
+            android:layout_marginTop="4fles dp"
+            android:hint="@string/hint_peso"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -164,7 +164,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Nível de Atividade:"
+            android:text="@string/label_atividade"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_altura" />
@@ -187,7 +187,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:padding="12dp"
-            android:text="Calcular IMC e Avançar"
+            android:text="@string/btn_avancar_imc"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -195,4 +195,3 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
-

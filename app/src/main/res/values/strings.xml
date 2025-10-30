@@ -1,13 +1,64 @@
 <resources>
     <string name="app_name">ImFitPlus</string>
 
+    <!-- Tela 1: MainActivity (activity_main.xml) -->
     <string name="welcome_message">Descubra seu perfil de saúde e receba recomendações personalizadas.</string>
-    <string name="welcome_button_text">Começar</string>
+    <string name="welcome_button_text">Comece aqui</string>
 
+    <!-- Tela 2: DadosActivity (activity_dados.xml) -->
+    <string name="titulo_dados">Dados Pessoais</string>
+    <string name="subtitulo_dados">Preencha seus dados para que possamos calcular seu IMC.</string>
+    <string name="label_nome">Nome Completo:</string>
+    <string name="hint_nome">Digite seu nome</string>
+    <string name="label_idade">Idade:</string>
+    <string name="hint_idade">Digite sua idade</string>
+    <string name="label_sexo">Sexo:</string>
+    <string name="rb_masculino">Masculino</string>
+    <string name="rb_feminino">Feminino</string>
+    <string name="label_altura">Altura (m):</string>
+    <string name="label_peso">Peso (kg):</string>
+    <string name="hint_altura">Ex: 1.75</string>
+    <string name="hint_peso">Ex: 70.5</string>
+    <string name="label_atividade">Nível de Atividade:</string>
     <string-array name="niveis_atividade">
         <item>Sedentário</item>
         <item>Leve</item>
         <item>Moderado</item>
         <item>Intenso</item>
     </string-array>
+    <string name="btn_avancar_imc">Calcular IMC e Avançar</string>
+
+    <!-- Tela 3: ImcActivity (activity_imc.xml) -->
+    <string name="titulo_imc">Resultado do IMC</string>
+    <string name="label_ola_nome">Olá, %s!</string>
+    <string name="label_seu_imc">Seu IMC é:</string>
+    <string name="label_categoria_imc">Categoria:</string>
+    <string name="btn_calcular_gasto">Calcular Gasto Calórico</string>
+    <string name="btn_voltar">Voltar</string>
+    <string name="img_desc_imc">Imagem representando a categoria do IMC</string>
+
+    <!-- Tela 4: GastoCaloricoActivity (activity_gasto_calorico.xml) -->
+    <string name="titulo_gasto_calorico">Gasto Calórico Diário</string>
+    <string name="subtitulo_gasto">Estes são seus resultados com base nos dados fornecidos.</string>
+    <string name="label_tmb">Sua Taxa Metabólica Basal (TMB) é:</string>
+    <string name="label_gasto_total">Seu gasto calórico total diário é:</string>
+    <string name="btn_ver_peso_ideal">Ver Peso Ideal</string>
+
+    <!-- Tela 5: PesoIdealActivity (activity_peso_ideal.xml) -->
+    <string name="titulo_peso_ideal">Sua Meta de Peso</string>
+    <string name="label_peso_ideal">Seu peso ideal é:</string>
+    <string name="label_diferenca_peso">Sua diferença para o peso ideal é:</string>
+    <string name="label_recomendacoes">Recomendações</string>
+    <string name="label_interesse">Marque as áreas de seu interesse para receber dicas:</string>
+    <string name="cb_dicas_alimentacao">Dicas de alimentação</string>
+    <string name="cb_dicas_exercicios">Dicas de exercícios</string>
+    <string name="btn_finalizar">Finalizar</string>
+
+    <!-- Strings de Validação (para usar com Toast) -->
+    <string name="validacao_erro_nome">Por favor, insira seu nome.</string>
+    <string name="validacao_erro_idade">Por favor, insira uma idade válida.</string>
+    <string name="validacao_erro_sexo">Por favor, selecione seu sexo.</string>
+    <string name="validacao_erro_altura">Por favor, insira uma altura válida (ex: 1.75).</string>
+    <string name="validacao_erro_peso">Por favor, insira um peso válido (ex: 70.5).</string>
+
 </resources>

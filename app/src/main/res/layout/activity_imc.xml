@@ -81,16 +81,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_imc_categoria_label"
             tools:text="Normal" />
 
-        <ImageView
-            android:id="@+id/iv_imc_imagem"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="24dp"
-            android:contentDescription="@string/img_desc_imc"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_imc_categoria"
-            tools:src="@tools:sample/avatars" />
+
 
         <Button
             android:id="@+id/btn_gasto_calorico"
@@ -102,11 +93,10 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_imc_imagem" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_imc_categoria" />
 
         <Button
             android:id="@+id/btn_imc_voltar"
-            style="@style/Widget.AppCompat.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
