@@ -132,7 +132,6 @@
 
         <Button
             android:id="@+id/btn_peso_ideal_voltar"
-            style="@style/Widget.AppCompat.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
