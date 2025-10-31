@@ -39,6 +39,10 @@ class GastoActivity : AppCompatActivity() {
             val intent = Intent(this, IdealActivity::class.java).apply {
                 putExtra("ALTURA", altura)
                 putExtra("PESO", peso)
+                putExtra("NOME", intent.getStringExtra("NOME"))
+                putExtra("IMC", intent.getDoubleExtra("IMC", 0.0))
+                putExtra("CATEGORIA", intent.getStringExtra("CATEGORIA"))
+                putExtra("GASTO", gastoTotal)
             }
             startActivity(intent)
         }

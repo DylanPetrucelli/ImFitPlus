@@ -55,6 +55,10 @@
     <string name="cb_dicas_exercicios">Dicas de exercícios</string>
     <string name="btn_finalizar">Finalizar</string>
 
+    <!-- Tela 6: ResumoActivity (resumo_de_saude.xml) -->
+
+
+
     <!-- Strings de Validação (para usar com Toast) -->
     <string name="validacao_erro_nome">Por favor, insira seu nome.</string>
     <string name="validacao_erro_idade">Por favor, insira uma idade válida.</string>

@@ -37,6 +37,9 @@ class ImcActivity : AppCompatActivity() {
                 putExtra("ALTURA", altura)
                 putExtra("PESO", peso)
                 putExtra("NIVEL_ATIVIDADE_INDEX", nivelAtividadeIndex)
+                putExtra("NOME", nome)
+                putExtra("IMC", imc)
+                putExtra("CATEGORIA", categoria)
             }
             startActivity(intent)
         }

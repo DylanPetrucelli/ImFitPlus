@@ -32,8 +32,13 @@ class IdealActivity : AppCompatActivity() {
 
             Toast.makeText(this, mensagem, Toast.LENGTH_LONG).show()
 
-            val intent = Intent(this, MainActivity::class.java).apply {
-                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            val intent = Intent(this, ResumoActivity::class.java).apply {
+                putExtra("NOME", intent.getStringExtra("NOME"))
+                putExtra("IMC", intent.getDoubleExtra("IMC", 0.0))
+                putExtra("PESO", intent.getDoubleExtra("PESO", 0.0))
+                putExtra("CATEGORIA", intent.getStringExtra("CATEGORIA"))
+                putExtra("IDEAL", pesoIdeal)
+                putExtra("GASTO", intent.getDoubleExtra("GASTO", 0.0))
             }
             startActivity(intent)
         }
