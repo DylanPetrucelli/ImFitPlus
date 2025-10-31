@@ -2,6 +2,7 @@ package br.edu.ifsp.scl.ads.prdm.sc3039226.imfitplus
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.ifsp.scl.ads.prdm.sc3039226.imfitplus.databinding.ActivityIdealBinding
 import kotlin.math.abs
@@ -27,6 +28,9 @@ class IdealActivity : AppCompatActivity() {
         binding.tvDiferencaPesoValor.text = formatarMensagemDiferenca(diferenca)
 
         binding.btnFinalizar.setOnClickListener {
+            val mensagem = criarMensagemFinal(binding.cbDicasAlimentacao.isChecked, binding.cbDicasExercicios.isChecked)
+
+            Toast.makeText(this, mensagem, Toast.LENGTH_LONG).show()
 
             val intent = Intent(this, MainActivity::class.java).apply {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -50,6 +54,13 @@ class IdealActivity : AppCompatActivity() {
         }
     }
 
-
+    private fun criarMensagemFinal(querAlimentacao: Boolean, querExercicios: Boolean): String {
+        return when {
+            querAlimentacao && querExercicios -> "Obrigado! Foco na alimentação e nos exercícios!"
+            querAlimentacao -> "Obrigado! Foco na alimentação!"
+            querExercicios -> "Obrigado! Foco nos exercícios!"
+            else -> "Obrigado por usar o ImFitPlus!"
+        }
+    }
 }
 
